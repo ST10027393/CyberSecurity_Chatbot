@@ -28,6 +28,10 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
             Console.WriteLine("Please enter your name: ");
             string name = Console.ReadLine();
             DisplayWelcome(name);
+
+            //Chat class
+            Chat c = new Chat();
+            c.UserChat();
         }//main end
 
         //method that plays chatbot intro 
