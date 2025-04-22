@@ -25,9 +25,7 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
             PlayGreeting();
 
             // Display personalized greeting
-            Console.WriteLine("Please enter your name: ");
-            string name = Console.ReadLine();
-            DisplayWelcome(name);
+            DisplayWelcome();
 
             //Chat class
             Chat c = new Chat();
@@ -37,7 +35,7 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
         //method that plays chatbot intro 
         static void PlayGreeting()
         {
-            /*exception handling with try catch in audio is missing
+            /*exception handling with try catch if audio is missing
             *or inaccessible
             */
             try
@@ -59,8 +57,9 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
 
 
         //Welcome method
-        static void DisplayWelcome(string name)
+        static void DisplayWelcome()
         {
+            string name = UsernameValidation();
             string welcomeArt = @"
 
  __      _____________.__  _________  ________      _____  ___________
@@ -76,6 +75,63 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
             Console.WriteLine("Welcome to GC Security's Chatbot");
             Console.WriteLine("How may I assist you today?");
         }
+
+        //User Name input error handling
+        static string UsernameValidation()
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter your name (or press Enter to continue anonymously): \n");
+                    string input = Console.ReadLine()?.Trim();
+
+                    if (string.IsNullOrEmpty(input))
+                    {
+                        Console.Write("Would you like to continue anonymously? (yes/no): \n");
+                        string choice = Console.ReadLine()?.Trim().ToLower();
+
+                        if (choice == "yes" || choice == "y")
+                        {
+                            return "Guest";
+                        }
+                        else if (choice == "no" || choice == "n")
+                        {
+                            Console.WriteLine("Please enter your name to continue.");
+                            continue;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid choice. Please answer 'yes' or 'no'.");
+                            continue;
+                        }
+                    }
+
+                    // Validate name contains at least one letter
+                    if (!input.Any(char.IsLetter))
+                    {
+                        throw new ArgumentException("Name must contain at least one letter.");
+                    }
+
+                    // Validate reasonable length
+                    if (input.Length > 50)
+                    {
+                        throw new ArgumentException("Name is too long (max 50 characters).");
+                    }
+
+                    return input;
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine($"Invalid name: {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Unexpected error: {ex.Message}");
+                    return "Guest"; // Fallback to anonymous
+                }//catch
+            }//while end
+        }//end username validation
 
     }//Program class end
 }//namespace end

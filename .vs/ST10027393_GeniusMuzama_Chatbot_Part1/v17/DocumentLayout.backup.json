@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|c:\\users\\lab_services_student\\source\\repos\\st10027393_geniusmuzama_chatbot_part1\\st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|solutionrelative:st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|c:\\users\\lab_services_student\\source\\repos\\st10027393_geniusmuzama_chatbot_part1\\st10027393_geniusmuzama_chatbot_part1\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|solutionrelative:st10027393_geniusmuzama_chatbot_part1\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|c:\\users\\lab_services_student\\source\\repos\\st10027393_geniusmuzama_chatbot_part1\\st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|solutionrelative:st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,29 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAADwv0MAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAgMzMzM3MrwHAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T19:56:38.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
               "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
               "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
-              "ViewState": "AgIAAAkAAABwMzMzM3MhwCEAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAACAa2ZmZmY9wE8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T19:34:07.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-19T19:34:07.325Z"
             }
           ]
         }
