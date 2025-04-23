@@ -8,40 +8,16 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
 {
     internal class Chat
     {
-        /*
         public void UserChat()
         {
-            Console.WriteLine("\nYou can ask me about:");
-            Console.WriteLine("- Password safety\n- Phishing\n- Safe browsing\n(Type 'exit' to leave)\n");
-
-            while (true)
-            {
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.Write("\nYou: ");
-                Console.ResetColor();
-
-                string input = Console.ReadLine().ToLower();
-
-                if (string.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine("Genius: Please type a question, I'm here to help!");
-                    continue;
-                }
-
-                if (input == "exit" || input == "quit")
-                {
-                    Console.WriteLine("Genius: Goodbye! Stay safe online :)");
-                    break;
-                }
-
-                RespondToUser(input);
-            }//while end
-        }*/
-
-        public void UserChat()
-        {
-            Console.WriteLine("\nYou can ask me about:");
-            Console.WriteLine("- Password safety\n- Phishing\n- Safe browsing\n(Type 'exit' to leave)\n");
+            // Display menu with styling
+            ChatStyler.PrintHeader("GC Security Chatbot");
+            ChatStyler.PrintMenu(new string[] {
+                "Password safety",
+                "Phishing scams",
+                "Safe browsing",
+                "Type 'exit' to quit"
+            });
 
             try
             {
@@ -52,9 +28,9 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
                 {
                     try
                     {
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.Write("\nYou: ");
-                        Console.ResetColor();
+                        // Get user input with styled prompt
+                        ChatStyler.PrintUserMessage(""); // Creates empty user bubble
+                        Console.SetCursorPosition(7, Console.CursorTop - 1); // Position cursor after "YOU: "
 
                         string input = Console.ReadLine()?.ToLowerInvariant()?.Trim() ?? string.Empty;
 
@@ -64,89 +40,111 @@ namespace ST10027393_GeniusMuzama_Chatbot_Part1
 
                             if (emptyInputAttempts >= 3 && emptyInputAttempts < maxAttempts)
                             {
-                                Console.WriteLine("Genius: Type 'help' for suggestions or ask a question");
+                                ChatStyler.PrintWarning("Type 'help' for suggestions or ask a question");
                             }
                             else if (emptyInputAttempts < 3)
                             {
-                                Console.WriteLine("Genius: Please type a question, I'm here to help!");
+                                ChatStyler.TypeWithEffect("Please type a question, I'm here to help!",
+                                    color: ChatStyler.Colors.System);
                             }
                             continue;
                         }
 
-                        // Reset empty input counter if valid input received
+                        // Reset counter on valid input
                         emptyInputAttempts = 0;
 
                         if (input.Length > 500)
                         {
-                            Console.WriteLine("Genius: Let's keep questions under 500 characters please!");
+                            ChatStyler.PrintWarning("Let's keep questions under 500 characters please!");
                             continue;
                         }
 
                         if (input == "exit" || input == "quit")
                         {
-                            Console.WriteLine("Genius: Goodbye! Stay safe online :)");
+                            ChatStyler.TypeWithEffect("Goodbye! Stay safe online :)",
+                                color: ChatStyler.Colors.Bot);
                             break;
                         }
 
+                        // Show thinking animation before responding
+                        ChatStyler.ShowThinking();
                         RespondToUser(input);
                     }
                     catch (IOException ex)
                     {
-                        Console.WriteLine($"Genius: Input error - {ex.Message}");
+                        ChatStyler.PrintWarning($"Input error: {ex.Message}");
                         if (emptyInputAttempts++ > 2) throw;
-                    }
-                    finally
-                    {
-                        Console.ResetColor();
                     }
                 }
 
                 if (emptyInputAttempts >= maxAttempts)
                 {
-                    Console.WriteLine("\nGenius: Session ended due to multiple empty inputs");
+                    ChatStyler.PrintWarning("Session ended due to multiple empty inputs");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Genius: Critical error - {ex.Message}");
+                ChatStyler.PrintWarning($"Critical error: {ex.Message}");
             }
-        }//user chat end
+        }
+
         public void RespondToUser(string input)
         {
-            // Use Contains for flexible matching
+            // Format all responses using styled bubbles
             if (input.Contains("how are you"))
             {
-                Console.WriteLine("Genius: I'm just a bunch of code, but I'm functioning securely!");
+                ChatStyler.PrintBotMessage("I'm just a bunch of code, but I'm functioning securely!");
             }
             else if (input == "help")
             {
-                Console.WriteLine("Genius: Try these topics:\n- 'password tips'\n- 'phishing examples'\n- 'browsing safety'");
+                ChatStyler.PrintBotMessage("Try these topics:\n" +
+                    "• 'password tips'\n" +
+                    "• 'phishing examples'\n" +
+                    "• 'browsing safety'\n\n" +
+                    "Or ask me anything about cybersecurity!");
             }
             else if (input.Contains("purpose") || input.Contains("what do you do"))
             {
-                Console.WriteLine("Genius: My job is to help you learn how to stay safe online. Ask me anything about cybersecurity!");
-            }
-            else if (input.Contains("ask") || input.Contains("help"))
-            {
-                Console.WriteLine("Genius: You can ask me about safe passwords, spotting phishing scams, or how to browse safely.");
+                ChatStyler.PrintBotMessage("My job is to help you learn how to stay safe online.\n" +
+                    "I can explain:\n" +
+                    "• Password best practices\n" +
+                    "• How to spot scams\n" +
+                    "• Secure browsing techniques");
             }
             else if (input.Contains("password"))
             {
-                Console.WriteLine("Genius: Always use a strong password—at least 12 characters with numbers, symbols, and both uppercase and lowercase letters.");
-                Console.WriteLine("Genius: Never reuse passwords and consider using a password manager.");
+                ChatStyler.PrintBotMessage("Password Security Tips:\n" +
+                    "- At least 12 characters\n" +
+                    "- Mix of uppercase & lowercase\n" +
+                    "- Numbers and special symbols\n" +
+                    "- Never reuse passwords\n\n" +
+                    "Consider using a password manager!");
             }
             else if (input.Contains("phishing"))
             {
-                Console.WriteLine("Genius: Phishing is when scammers pretend to be someone you trust—like a bank—to steal info.");
-                Console.WriteLine("Genius: Always check the sender's email and avoid clicking suspicious links.");
+                ChatStyler.PrintBotMessage("Phishing Alert:\n" +
+                    "Scammers pretend to be trusted entities to steal your info.\n\n" +
+                    "Red flags:\n" +
+                    "- Urgent/threatening language\n" +
+                    "- Suspicious sender addresses\n" +
+                    "- Requests for sensitive data");
             }
             else if (input.Contains("safe browsing") || input.Contains("browsing"))
             {
-                Console.WriteLine("Genius: Use secure (HTTPS) websites, don't download from unknown sources, and keep your browser updated.");
+                ChatStyler.PrintBotMessage("Safe Browsing Guidelines:\n" +
+                    "• Look for HTTPS in URLs\n" +
+                    "• Don't download from untrusted sites\n" +
+                    "• Keep browser/plugins updated\n" +
+                    "• Use ad-blockers to avoid malvertising");
             }
             else
             {
-                Console.WriteLine("Genius: Hmm... I didn’t quite get that. Try asking about passwords, phishing, or safe browsing.");
+                ChatStyler.PrintBotMessage("Hmm... I didn't quite understand that.\n" +
+                    "Try asking about:\n" +
+                    "- Password security\n" +
+                    "- Phishing scams\n" +
+                    "- Safe browsing practices\n\n" +
+                    "Or type 'help' for more options.");
             }
         }
 

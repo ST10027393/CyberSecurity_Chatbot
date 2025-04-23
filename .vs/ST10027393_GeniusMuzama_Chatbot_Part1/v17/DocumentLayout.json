@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|solutionrelative:st10027393_geniusmuzama_chatbot_part1\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|c:\\users\\lab_services_student\\source\\repos\\st10027393_geniusmuzama_chatbot_part1\\st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B5E65FB-FAE8-4A86-BB42-BA27D25F23C6}|ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1.csproj|solutionrelative:st10027393_geniusmuzama_chatbot_part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +38,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatStyler.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs",
+              "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs",
+              "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\ChatStyler.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAMwFAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T19:05:37.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Welcome.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs",
+              "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs",
+              "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Welcome.cs",
+              "ViewState": "AgIAAGkAAACgNTMzM3MkwBwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:38:15.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
+              "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
+              "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:34:07.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
               "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Chat.cs",
-              "ViewState": "AgIAAE8AAAAgMzMzM3MrwGAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAewEAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T19:56:38.947Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
-              "RelativeDocumentMoniker": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ST10027393_GeniusMuzama_Chatbot_Part1\\ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
-              "RelativeToolTip": "ST10027393_GeniusMuzama_Chatbot_Part1\\Program.cs",
-              "ViewState": "AgIAAAQAAACAa2ZmZmY9wE8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T19:34:07.325Z"
             }
           ]
         }
